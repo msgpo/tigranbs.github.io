@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tigran Bayburtsyan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.7.2/darkly/bulmaswatch.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+      .content * {
+        font-family: "Lora", serif;
+      }
+    </style>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <a href="/">
+        <h1 class="title">
+          Tigran Bayburtsyan
+        </h1>
+      </a>
+      <p class="subtitle">
+        Software optimization expert.
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-2">
+          <a role="button" id='burger' class="navbar-burger is-pulled-right" style="margin-top: -17px" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+          <h5 class="is-hidden-desktop">About <p>&nbsp;</p></h5>
+          <aside id='menu' class="menu is-hidden-touch">
+            <p class="menu-label ">
+              General
+            </p>
+            <ul class="menu-list">
+              <li><a class="is-active" href="/">About</a></li>
+              <li><a href="/skills">Skills</a></li>
+            </ul>
+            <p class="menu-label">
+              Work
+            </p>
+            <ul class="menu-list">
+              <li><a>Experience</a></li>
+              <li><a>Companies Founded</a></li>
+              <li><a>Blogging</a></li>
+            </ul>
+            <p class="menu-label">
+              Personal
+            </p>
+            <ul class="menu-list">
+              <li><a>Videos</a></li>
+              <li><a>Open Source</a></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="column is-10">
+          <div class="content is-medium">
+            <p>
+              I'm a <code>software engineer</code> with a deep focus on software <i>optimization and scalability</i>.
+              <br/> Worked for companies like <b>JetBrains, PicsArt, AdValidation, CodinGame, RightScale</b> etc..
+            </p>
+            <hr/>
+            <p>
+              I started my career as a backend software engineer in 2008.
+              Then quickly moved to Web UI projects by making jQuery plugins and custom Wordpress and Drupal themes as an Upwork freelancer.<br/>
+              Proudly served to the army from 2010 to 2012 without any computer, that's why I read more books during those 2 years than all in my life.<br/>
+              Then after the army, I started my professional career as a lead backend developer at IFC Markets, leading Forex trading company.
+              I learned a lot there and saw how multi-country business operates, and how deep technological optimizations can bring real business value.<br/>
+              That's why I focused myself on workflow optimizations.
+            </p>
+            <hr/>
+            <p>
+              I love riding a motorcycle especially for a long distance trips. One time I made a large motorcycle trip across Europe from Estonia to France Lion, it took 1.5 month and it was
+              life changing event for me. <br/>
+              I alow skiing a lot during winter season, so as you can imagine, I riding a motorcycle when there is no snow, and skiing when it's snowing :)
+            </p>
+            <!-- <hr/>
+            <p>
+              I founded my first company in 2014 which was a skill testing software specifically targeted for banking industry. I developed it solo within 3 months, then started to sell it,
+              by knocking doors of local financial institutions in Yerevan, Armenia. After 1 year of hard working I got 3 paid customers, but model wasn't working very well, so I decided to move on.
+              I open sourced full platform under TestedBrain name in Github, and after a few months one of the russian companies wanted full licence on it and few months consulting for them, so I made a deal!
+              Later on I fully focused on consulting companies and optimizing their software workflows, infrastructure. Founded few companies later on, and had 2 company exists.
+            </p>
+            <hr/>
+            <p>
+              It is funny but I founded local fruit and vegetables delivery company <a href="https://gazar.am" target="_blank">Gazar.am</a> where my focus was optimizing delivery flow,
+              and building platform on top of that, but after having huge success on local market, we got good deal on selling a company, so we moved forward on that.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    var burgerBtn = document.getElementById('burger');
+    var menu = document.getElementById('menu');
+    burgerBtn.addEventListener('click', function() {
+      if (menu.className.indexOf('is-hidden-touch') > -1) {
+        menu.className = 'menu';
+      } else {
+        menu.className = 'menu is-hidden-touch';
+      }
+    });
+  </script>
+  </body>
+</html>
